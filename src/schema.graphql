@@ -1,0 +1,13 @@
+type Thing {
+  id: ID
+  description: String!
+  discountPrice: Int
+  hasDiscount: Boolean!
+  image: String!
+  price: Int!
+  title: String!
+}
+
+type Query {
+  getPopularClothes: [Thing]!
+}
